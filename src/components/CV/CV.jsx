@@ -132,7 +132,7 @@ function CV() {
               du DOM avec JavaScript / Gérer les événements utilisateurs avec
               JavaScript
             </p>
-            <li>Débuggage et optimisation du SEO d’un site de Photographe</li>
+            <li>Déboggage et optimisation du SEO d’un site de Photographe</li>
             <p>
               Optimiser les performances d’un site web / Débugger un site web
               grâce aux Chrome DevTools / Rédiger un cahier de recette pour
