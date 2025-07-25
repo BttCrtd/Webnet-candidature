@@ -1,42 +1,345 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dragon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+canvas {
+  height: 300px;
+  position: relative;
+  z-index: 4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.box {
+  width: 90%;
 }
 
-.card {
-  padding: 2em;
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  padding: 13px 21px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #4a4c4b;
+  background-color: #f7d6d7;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  color: white;
+  background-color: #d00814;
+}
+
+button.active {
+  background-color: #d00814;
+  color: white;
+}
+
+/*Lettre de motivation*/
+
+.letter-container {
+  width: 80%;
+  margin: 30px auto 70px auto;
+  color: #000000;
+  text-align: justify;
+  border-radius: 25px;
+  border: 2px solid white;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+p,
+a {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: black;
+}
+.alinea {
+  margin-left: 40px;
+}
+.align-left {
+  text-align: left;
+  margin: 0;
+}
+.align-left p {
+  margin: 0;
+}
+.align-right {
+  text-align: right;
+}
+.align-right p {
+  margin: 0;
+}
+.lettre {
+  text-align: justify;
+}
+h1 {
+  margin: 40px 0px;
+  font-size: 25px;
+  text-align: left;
+}
+.signature {
+  margin-top: 40px;
+}
+
+/************* CV **************/
+
+.cv-container {
+  width: 87%;
+  margin: 30px auto 70px auto;
+  color: #000000;
+  text-align: justify;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+}
+
+.grey-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background: #afe2f8;
+  z-index: 0;
+}
+
+.blue-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  background: #3b5387;
+  z-index: 2;
+  transform: skewY(-28deg);
+  transform-origin: top left;
+}
+
+.light-blue-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background: #fed530;
+  z-index: 1;
+  transform: skewY(3deg);
+  transform-origin: top right;
+}
+
+.contact-and-skills,
+.experience-and-formation {
+  position: relative;
+  z-index: 3;
+}
+
+.contact-and-skills {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 40px 40px;
+  background-color: transparent;
+  border-radius: 25px 0 0 25px;
+}
+
+/*Photo de profil*/
+
+.photo-container {
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+img {
+  background-color: #afe2f8;
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Coordonnées compétences et centres d'intèrêts*/
+.contact-and-skills h2 {
+  margin: 15px 0px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.contact-and-skills h3,
+ul {
+  margin: 0;
+  font-size: 19px;
+}
+
+.contact-and-skills p,
+.contact-and-skills a {
+  margin: 0 0 5px 10px;
+  font-size: 19px;
+}
+
+.phone,
+.mail,
+.portfolio,
+.localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 8px;
+  height: 100%;
+}
+
+/****** Expériences et formations ********/
+.experience-and-formation {
+  width: 65%;
+}
+
+.border-bot {
+  border-bottom: 1px solid black;
+}
+
+/*Présentation*/
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 40px 10px 0;
+  background-color: transparent;
+  border-radius: 0 25px 0 0;
+}
+
+.title h2,
+.title h1 {
+  text-decoration: none;
+  text-align: end;
+  margin: 0;
+}
+
+.title h1 {
+  font-size: 44px;
+}
+
+.title h2 {
+  font-size: 21px;
+  font-weight: normal;
+}
+
+/* Projets Réalisés*/
+.projects {
+  padding: 0 40px 0 10px;
+}
+.projects h2 {
+  text-decoration: none;
+  font-size: 25px;
+  margin: 5px 0 0 0;
+}
+
+.projects h3 {
+  font-size: 19px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.projects p {
+  margin: 0;
+  text-align: justify;
+  font-size: 19px;
+}
+
+.projects li {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.projects p {
+  font-size: 19px;
+  margin-left: 20px;
+}
+
+.experience-pro-and-formations {
+  padding: 0 40px 40px 10px;
+}
+
+.experience-pro-and-formations h2 {
+  margin: 15px 0 0 0;
+}
+/* Expérience Professionnelle */
+.exp-pro {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 10px;
+}
+
+.exp-pro p {
+  font-size: 19px;
+  margin: 0;
+  text-align: start;
+}
+
+.OCR,
+.UCA,
+.LJA {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 10px;
+}
+
+.OCR p,
+.UCA p,
+.LJA p {
+  font-size: 19px;
+  margin: 0;
+  text-align: start;
+}
+
+.place-of-work {
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 1px solid black;
 }
