@@ -16,13 +16,29 @@ function Home() {
         >
           Lettre de motivation
         </button>
+
         <Dragon3D />
+
         <button
           className={active === 'cv' ? 'active' : ''}
           onClick={() => setActive('cv')}
         >
           CV
         </button>
+        <div className="button-tablette">
+          <button
+            className={active === 'lettre' ? 'active' : ''}
+            onClick={() => setActive('lettre')}
+          >
+            Lettre de motivation
+          </button>
+          <button
+            className={active === 'cv' ? 'active' : ''}
+            onClick={() => setActive('cv')}
+          >
+            CV
+          </button>
+        </div>
       </section>
       <section className="contain">{active === 'lettre' && <Letter />}</section>
       <section className="contain">{active === 'cv' && <CV />}</section>

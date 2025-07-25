@@ -1,6 +1,7 @@
 #root {
   width: 100%;
   max-width: 1200px;
+  min-width: 500px;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
@@ -24,6 +25,10 @@ canvas {
 
 .box {
   width: 90%;
+}
+
+.button-tablette {
+  display: none;
 }
 
 button {
@@ -102,7 +107,7 @@ a {
 }
 h1 {
   margin: 40px 0px;
-  font-size: 25px;
+  font-size: 19px;
   text-align: left;
 }
 .signature {
@@ -196,9 +201,9 @@ img {
 
 /* Coordonnées compétences et centres d'intèrêts*/
 .contact-and-skills h2 {
-  margin: 15px 0px;
+  margin: 10px 0px;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 19px;
 }
 
 .contact-and-skills h3,
@@ -272,7 +277,7 @@ ul {
 }
 .projects h2 {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 19px;
   margin: 5px 0 0 0;
 }
 
@@ -342,4 +347,342 @@ ul {
   margin-top: 10px;
   padding-left: 10px;
   border-left: 1px solid black;
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  #root {
+    max-width: 90%;
+    padding: 0 20px;
+  }
+
+  .dragon {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dragon button {
+    display: none;
+  }
+
+  .button-tablette {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .button-tablette button {
+    display: flex;
+    width: 300px;
+  }
+
+  .box,
+  button {
+    width: 100%;
+  }
+
+  .grey-cover {
+    width: 37%;
+  }
+
+  .blue-cover {
+    height: 15%;
+
+    transform: skewY(-28deg);
+  }
+
+  .light-blue-cover {
+    height: 10%;
+  }
+
+  .contact-and-skills,
+  .experience-and-formation {
+    position: relative;
+    z-index: 3;
+  }
+
+  .contact-and-skills {
+    width: 35%;
+
+    padding: 15px 0 15px 15px;
+  }
+
+  /*Photo de profil*/
+
+  .photo-container {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Coordonnées compétences et centres d'intèrêts*/
+  .contact-and-skills h2 {
+    margin: 10px 0px;
+    font-size: 19px;
+  }
+
+  .contact-and-skills h3,
+  ul {
+    font-size: 16px;
+  }
+
+  .contact-and-skills p,
+  .contact-and-skills li,
+  .contact-and-skills a {
+    margin: 0 0 5px 5px;
+    font-size: 16px;
+  }
+
+  /****** Expériences et formations ********/
+
+  /*Présentation*/
+  .title {
+    padding: 15px 15px 5px 0;
+  }
+
+  .title h1 {
+    font-size: 34px;
+  }
+
+  .title h2 {
+    font-size: 19px;
+  }
+
+  /* Projets Réalisés*/
+  .projects {
+    padding: 0 15px 0 5px;
+  }
+  .projects h2 {
+    font-size: 19px;
+  }
+
+  .projects h3 {
+    font-size: 15px;
+  }
+
+  .projects li {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .projects p {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .experience-pro-and-formations {
+    padding: 0 15px 15px 5px;
+  }
+
+  .experience-pro-and-formations h2 {
+    margin: 10px 0 0 0;
+    font-size: 19px;
+  }
+  /* Expérience Professionnelle */
+  .exp-pro {
+    gap: 8px;
+  }
+
+  .exp-pro p {
+    font-size: 16px;
+  }
+
+  .OCR,
+  .UCA,
+  .LJA {
+    gap: 8px;
+  }
+
+  .OCR p,
+  .UCA p,
+  .LJA p {
+    font-size: 16px;
+  }
+
+  .place-of-work {
+    margin-top: 10px;
+  }
+
+  .description {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+  #root {
+    padding: 0;
+  }
+
+  .dragon {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dragon button {
+    display: none;
+  }
+
+  .button-tablette {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .button-tablette button {
+    display: flex;
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .box,
+  button {
+    width: 100%;
+  }
+
+  .contain {
+    display: flex;
+    justify-content: center;
+  }
+  .cv-container {
+    margin: 10px;
+  }
+
+  .grey-cover {
+    width: 36%;
+  }
+
+  .blue-cover {
+    height: 11%;
+
+    transform: skewY(-28deg);
+  }
+
+  .light-blue-cover {
+    height: 10%;
+  }
+
+  .contact-and-skills,
+  .experience-and-formation {
+    position: relative;
+    z-index: 3;
+  }
+
+  .contact-and-skills {
+    width: 35%;
+
+    padding: 15px 0 15px 15px;
+  }
+
+  /*Photo de profil*/
+
+  .photo-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* Coordonnées compétences et centres d'intèrêts*/
+  .contact-and-skills h2 {
+    margin: 5px 0px;
+    font-size: 16px;
+  }
+
+  .contact-and-skills h3,
+  ul {
+    font-size: 12px;
+  }
+
+  .contact-and-skills p,
+  .contact-and-skills li,
+  .contact-and-skills a {
+    margin: 0 0 5px 5px;
+    font-size: 12px;
+  }
+
+  /****** Expériences et formations ********/
+
+  /*Présentation*/
+  .title {
+    padding: 10px 10px 5px 0;
+  }
+
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .title h2 {
+    font-size: 16px;
+  }
+
+  /* Projets Réalisés*/
+  .projects {
+    padding: 0 10px 0 5px;
+  }
+  .projects h2 {
+    font-size: 16px;
+  }
+
+  .projects h3 {
+    font-size: 12px;
+  }
+
+  .projects li {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .projects p {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .experience-pro-and-formations {
+    padding: 0 10px 10px 5px;
+  }
+
+  .experience-pro-and-formations h2 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+  }
+  /* Expérience Professionnelle */
+  .exp-pro {
+    gap: 8px;
+  }
+
+  .exp-pro p {
+    font-size: 12px;
+  }
+
+  .OCR,
+  .UCA,
+  .LJA {
+    gap: 8px;
+  }
+
+  .OCR p,
+  .UCA p,
+  .LJA p {
+    font-size: 12px;
+  }
+
+  .place-of-work {
+    margin-top: 10px;
+  }
+
+  .description {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+  }
 }
