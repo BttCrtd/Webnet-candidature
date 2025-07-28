@@ -30,7 +30,7 @@ function Letter() {
         <p>69003 Lyon</p>
         <br />
         <p>
-          <em>Clermont-Ferrand, le 15/07/2025</em>
+          <em>Clermont-Ferrand, le 26/07/2025</em>
         </p>
       </div>
       <div className="lettre">
