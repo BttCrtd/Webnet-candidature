@@ -46,7 +46,7 @@ function Letter() {
           me spécialisant dans la stack React. Mon objectif est de consolider
           une base solide en développement front-end moderne pour ensuite me
           spécialiser dans l’intégration d’éléments et d’interfaces 3D
-          interactifs, à l’aide d’outils comme React Three fiber, Three.js ou
+          interactifs, à l’aide d’outils comme React Three Fiber, Three.js ou
           @react-three/drei.
         </p>
         <p>
